@@ -27,6 +27,9 @@ class WheelyViewModel : ObservableObject {
 	
 	var pointerColor: Color = Color.black
 	
+	/// The current selected item
+	@Published var selectedIndex: Int?
+	
 	init() {
 		self.model = WheelyModel()
 	}
@@ -80,9 +83,17 @@ class WheelyViewModel : ObservableObject {
 		count = model.values.count
 	}
 	
+	/// Randomly select a segment from the values
+	/// - Returns: the index selected
+	func generatedSelectedIndex() -> Int {
+		selectedIndex = Int.random(in: (0...model.values.count))
+		return selectedIndex ?? -1
+	}
+	
 	/// Calculates the random amount to rotate
 	/// - Returns: the amount in degress.
-	func calculateRotation() -> Double {
+	/// - Parameter selectedIndex: the segment to stop rotating on
+	func calculateRotation(selecting selectedIndex: Int) -> Double {
 		
 		let segments = model.values
 		
@@ -92,7 +103,8 @@ class WheelyViewModel : ObservableObject {
 		// mulitply by 360 to get this in degress
 		var randomAmount = rotations * 360
 		
-		randomAmount += Double((360 / segments.count)) * Double(Int.random(in: (0...segments.count)))
+		// Add a random amount base on the segment that will be picked
+		randomAmount += Double((360 / segments.count)) * Double(selectedIndex)
 		return randomAmount
 	}
 	

@@ -76,8 +76,8 @@ struct SpinWheelView: View {
 	}
 
 	func spin() {
-		
-		let rotateAmount = viewModel.calculateRotation()
+		let selectedIndex = viewModel.generatedSelectedIndex()
+		let rotateAmount = viewModel.calculateRotation(selecting: selectedIndex)
 		withAnimation(animation) {
 			rotation += rotateAmount
 		}
@@ -92,7 +92,24 @@ struct SpinWheelView: View {
 
 struct SpinWheelView_Previews: PreviewProvider {
 	static var previews: some View {
+		let viewModel = WheelyViewModel()
+			.add(name: "", color: Color.red)
+			.add(name: "", color: .orange)
+			.add(name: "", color: .yellow)
+			.add(name: "", color: .gray)
+			.add(name: "", color: .blue)
+			.add(name: "", color: .indigo)
+			.add(name: "", color: .purple)
+			.add(name: "", color: .cyan)
 		SpinWheelView()
-			.environmentObject(WheelyViewModel())
+			.environmentObject(viewModel)
+	}
+}
+
+struct SpinWheelView_Previews_NothingAdded: PreviewProvider {
+	static var previews: some View {
+		let viewModel = WheelyViewModel()
+		SpinWheelView()
+			.environmentObject(viewModel)
 	}
 }
