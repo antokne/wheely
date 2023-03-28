@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610D71B829D2748E0051BB42 /* WheelyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D71B729D2748E0051BB42 /* WheelyValue.swift */; };
 		61E6166A29CFD48D00C2E3A4 /* WheelyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E6166929CFD48D00C2E3A4 /* WheelyApp.swift */; };
 		61E6166C29CFD48D00C2E3A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E6166B29CFD48D00C2E3A4 /* ContentView.swift */; };
 		61E6166E29CFD48E00C2E3A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61E6166D29CFD48E00C2E3A4 /* Assets.xcassets */; };
@@ -14,6 +15,19 @@
 		61E6167C29CFD48E00C2E3A4 /* WheelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E6167B29CFD48E00C2E3A4 /* WheelyTests.swift */; };
 		61E6168629CFD48E00C2E3A4 /* WheelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E6168529CFD48E00C2E3A4 /* WheelyUITests.swift */; };
 		61E6168829CFD48E00C2E3A4 /* WheelyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E6168729CFD48E00C2E3A4 /* WheelyUITestsLaunchTests.swift */; };
+		61E616A829D115F100C2E3A4 /* WheelyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616A729D115F100C2E3A4 /* WheelyModel.swift */; };
+		61E616AC29D120D400C2E3A4 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616AB29D120D300C2E3A4 /* ColorExtensions.swift */; };
+		61E616AE29D1238200C2E3A4 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616AD29D1238200C2E3A4 /* ColorTests.swift */; };
+		61E616B029D12F3A00C2E3A4 /* WheelyModelValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616AF29D12F3A00C2E3A4 /* WheelyModelValueTests.swift */; };
+		61E616B329D13A4500C2E3A4 /* WheelyModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616B229D13A4500C2E3A4 /* WheelyModelTests.swift */; };
+		61E616B629D141C200C2E3A4 /* WheelyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616B529D141C200C2E3A4 /* WheelyViewModel.swift */; };
+		61E616B929D141FA00C2E3A4 /* WheelyValuesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616B829D141FA00C2E3A4 /* WheelyValuesListView.swift */; };
+		61E616BB29D1420E00C2E3A4 /* WheelyValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616BA29D1420E00C2E3A4 /* WheelyValueView.swift */; };
+		61E616BD29D22EE600C2E3A4 /* WheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616BC29D22EE600C2E3A4 /* WheelView.swift */; };
+		61E616C129D231AC00C2E3A4 /* SpinWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616C029D231AC00C2E3A4 /* SpinWheelView.swift */; };
+		61E616C529D2361900C2E3A4 /* WheelyAddValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616C429D2361900C2E3A4 /* WheelyAddValueView.swift */; };
+		61E616CA29D25E1D00C2E3A4 /* WheelPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616C929D25E1D00C2E3A4 /* WheelPointer.swift */; };
+		61E616CC29D25EBB00C2E3A4 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E616CB29D25EBB00C2E3A4 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610D71B729D2748E0051BB42 /* WheelyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyValue.swift; sourceTree = "<group>"; };
 		61E6166629CFD48D00C2E3A4 /* Wheely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wheely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E6166929CFD48D00C2E3A4 /* WheelyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyApp.swift; sourceTree = "<group>"; };
 		61E6166B29CFD48D00C2E3A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +60,20 @@
 		61E6168129CFD48E00C2E3A4 /* WheelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E6168529CFD48E00C2E3A4 /* WheelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyUITests.swift; sourceTree = "<group>"; };
 		61E6168729CFD48E00C2E3A4 /* WheelyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61E616A729D115F100C2E3A4 /* WheelyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyModel.swift; sourceTree = "<group>"; };
+		61E616AB29D120D300C2E3A4 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		61E616AD29D1238200C2E3A4 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		61E616AF29D12F3A00C2E3A4 /* WheelyModelValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyModelValueTests.swift; sourceTree = "<group>"; };
+		61E616B129D1348600C2E3A4 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		61E616B229D13A4500C2E3A4 /* WheelyModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyModelTests.swift; sourceTree = "<group>"; };
+		61E616B529D141C200C2E3A4 /* WheelyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyViewModel.swift; sourceTree = "<group>"; };
+		61E616B829D141FA00C2E3A4 /* WheelyValuesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyValuesListView.swift; sourceTree = "<group>"; };
+		61E616BA29D1420E00C2E3A4 /* WheelyValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyValueView.swift; sourceTree = "<group>"; };
+		61E616BC29D22EE600C2E3A4 /* WheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelView.swift; sourceTree = "<group>"; };
+		61E616C029D231AC00C2E3A4 /* SpinWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinWheelView.swift; sourceTree = "<group>"; };
+		61E616C429D2361900C2E3A4 /* WheelyAddValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyAddValueView.swift; sourceTree = "<group>"; };
+		61E616C929D25E1D00C2E3A4 /* WheelPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPointer.swift; sourceTree = "<group>"; };
+		61E616CB29D25EBB00C2E3A4 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +104,7 @@
 		61E6165D29CFD48D00C2E3A4 = {
 			isa = PBXGroup;
 			children = (
+				61E616AA29D120BA00C2E3A4 /* Packages */,
 				61E6166829CFD48D00C2E3A4 /* Wheely */,
 				61E6167A29CFD48E00C2E3A4 /* WheelyTests */,
 				61E6168429CFD48E00C2E3A4 /* WheelyUITests */,
@@ -95,8 +125,11 @@
 		61E6166829CFD48D00C2E3A4 /* Wheely */ = {
 			isa = PBXGroup;
 			children = (
-				61E6166929CFD48D00C2E3A4 /* WheelyApp.swift */,
+				61E616A929D115F500C2E3A4 /* Model */,
+				61E616B429D1419B00C2E3A4 /* ViewModel */,
+				61E616B729D141D900C2E3A4 /* Views */,
 				61E6166B29CFD48D00C2E3A4 /* ContentView.swift */,
+				61E6166929CFD48D00C2E3A4 /* WheelyApp.swift */,
 				61E6166D29CFD48E00C2E3A4 /* Assets.xcassets */,
 				61E6166F29CFD48E00C2E3A4 /* Wheely.entitlements */,
 				61E6167029CFD48E00C2E3A4 /* Preview Content */,
@@ -116,6 +149,9 @@
 			isa = PBXGroup;
 			children = (
 				61E6167B29CFD48E00C2E3A4 /* WheelyTests.swift */,
+				61E616AD29D1238200C2E3A4 /* ColorTests.swift */,
+				61E616AF29D12F3A00C2E3A4 /* WheelyModelValueTests.swift */,
+				61E616B229D13A4500C2E3A4 /* WheelyModelTests.swift */,
 			);
 			path = WheelyTests;
 			sourceTree = "<group>";
@@ -127,6 +163,54 @@
 				61E6168729CFD48E00C2E3A4 /* WheelyUITestsLaunchTests.swift */,
 			);
 			path = WheelyUITests;
+			sourceTree = "<group>";
+		};
+		61E616A929D115F500C2E3A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				610D71B729D2748E0051BB42 /* WheelyValue.swift */,
+				61E616A729D115F100C2E3A4 /* WheelyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61E616AA29D120BA00C2E3A4 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				61E616B129D1348600C2E3A4 /* ReadMe.md */,
+				61E616AB29D120D300C2E3A4 /* ColorExtensions.swift */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		61E616B429D1419B00C2E3A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				61E616B529D141C200C2E3A4 /* WheelyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		61E616B729D141D900C2E3A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61E616C829D25E0400C2E3A4 /* SubViews */,
+				61E616BA29D1420E00C2E3A4 /* WheelyValueView.swift */,
+				61E616C429D2361900C2E3A4 /* WheelyAddValueView.swift */,
+				61E616B829D141FA00C2E3A4 /* WheelyValuesListView.swift */,
+				61E616BC29D22EE600C2E3A4 /* WheelView.swift */,
+				61E616C029D231AC00C2E3A4 /* SpinWheelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61E616C829D25E0400C2E3A4 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				61E616C929D25E1D00C2E3A4 /* WheelPointer.swift */,
+				61E616CB29D25EBB00C2E3A4 /* Triangle.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +229,8 @@
 			dependencies = (
 			);
 			name = Wheely;
+			packageProductDependencies = (
+			);
 			productName = Wheely;
 			productReference = 61E6166629CFD48D00C2E3A4 /* Wheely.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +303,8 @@
 				Base,
 			);
 			mainGroup = 61E6165D29CFD48D00C2E3A4;
+			packageReferences = (
+			);
 			productRefGroup = 61E6166729CFD48D00C2E3A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E616B629D141C200C2E3A4 /* WheelyViewModel.swift in Sources */,
 				61E6166C29CFD48D00C2E3A4 /* ContentView.swift in Sources */,
+				610D71B829D2748E0051BB42 /* WheelyValue.swift in Sources */,
+				61E616C529D2361900C2E3A4 /* WheelyAddValueView.swift in Sources */,
+				61E616B929D141FA00C2E3A4 /* WheelyValuesListView.swift in Sources */,
+				61E616CC29D25EBB00C2E3A4 /* Triangle.swift in Sources */,
+				61E616C129D231AC00C2E3A4 /* SpinWheelView.swift in Sources */,
 				61E6166A29CFD48D00C2E3A4 /* WheelyApp.swift in Sources */,
+				61E616BB29D1420E00C2E3A4 /* WheelyValueView.swift in Sources */,
+				61E616CA29D25E1D00C2E3A4 /* WheelPointer.swift in Sources */,
+				61E616AC29D120D400C2E3A4 /* ColorExtensions.swift in Sources */,
+				61E616BD29D22EE600C2E3A4 /* WheelView.swift in Sources */,
+				61E616A829D115F100C2E3A4 /* WheelyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				61E6167C29CFD48E00C2E3A4 /* WheelyTests.swift in Sources */,
+				61E616B029D12F3A00C2E3A4 /* WheelyModelValueTests.swift in Sources */,
+				61E616AE29D1238200C2E3A4 /* ColorTests.swift in Sources */,
+				61E616B329D13A4500C2E3A4 /* WheelyModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wheely/Preview Content\"";
-				DEVELOPMENT_TEAM = 9J93HX6462;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -453,7 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wheely/Preview Content\"";
-				DEVELOPMENT_TEAM = 9J93HX6462;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

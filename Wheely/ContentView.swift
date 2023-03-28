@@ -2,25 +2,28 @@
 //  ContentView.swift
 //  Wheely
 //
-//  Created by Antony Gardiner on 26/03/23.
+//  Created by Antony Gardiner on 28/03/23.
 //
 
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+	
+	static let modelUrl = URL.documentsDirectory.appending(component: "wheely-model").appendingPathExtension("json")
+	@ObservedObject var wheelyViewModel = WheelyViewModel(with: ContentView.modelUrl)
+
+	var body: some View {
+		NavigationStack {
+			SpinWheelView()
+				.environmentObject(wheelyViewModel)
+		}
+		.navigationBarTitleDisplayMode(.inline)
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
+	
 }
